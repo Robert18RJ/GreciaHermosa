@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Mi Niña Hermosa! ❤️</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musicaFondo" loop>
+        <source src="tu_musica.mp3" type="audio/mpeg">
+        Tu navegador no soporta elementos de audio.
+    </audio>
+    
+    <button id="controlMusica">♫ Reproducir música</button>
+    
+    <h1 style="content: center; margin: 0%; padding: 0%;">❤️</h1>
+    <h1>¡Feliz Cumpleaños Mi Niña Hermosa!</h1>
+        
+    <div class="contenedor">
+        <div class="envoltura-sobre">
+            <div class="sobre">
+                <div class="corazon"></div>
+                <div class="solapa-superior"></div>
+                <div class="solapa-derecha"></div>
+                <div class="solapa-izquierda"></div>
+                <div class="solapa-inferior"></div>
+                
+                <div class="carta">
+                    <div class="contenido">
+                        <div id="textoCarta"></div>
+                        <button id="abrirGaleria">Ver nuestros momentos especiales</button>
+                        <p class="mensaje-hover" data-mensaje-extra="Eres mi presente más feliz y mi futuro más soñado.">Pasa el cursor sobre mí</p>
+                        <p class="mensaje-hover" data-mensaje-extra="¡Eres el equilibrio perfecto entre la paz que calma mi alma y la pasión que enciende mi corazón!">Descubre un mensaje secreto</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="galeriaModal" class="modal">
+        <span class="cerrar-modal">&times;</span>
+        <div class="modal-contenido">
+            <img src="foto1.jpeg" class="foto-galeria">
+            <img src="foto2.jpeg" class="foto-galeria">
+            <img src="foto3.jpeg" class="foto-galeria">
+            <img src="foto4.jpeg" class="foto-galeria">
+            <img src="foto5.jpeg" class="foto-galeria">
+
+
+            <div class="navegacion-fotos">
+                <button id="fotoAnterior">&lt;</button>
+                <span id="indicadorFoto">1/5</span>
+                <button id="fotoSiguiente">&gt;</button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="confeti-contenedor" class="confeti-contenedor"></div>
+    
+    <script src="script_v2.js"></script>
+</body>
+</html>
